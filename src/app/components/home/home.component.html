@@ -1,0 +1,34 @@
+<div class="loader" [ngClass]="loader?'show':'hide'">W3EARTH..</div>
+<div class="container mt-4 mb-4">
+	<div class="page-title"><i class="fa fa-comments-o"></i> Comments</div>
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-xl-3 col-xs-12 aliesbx mt-4" *ngFor="let work of allWorksLists | sortings: 'latest'">
+	<div *ngIf="work.latest" [ngClass]="{'latest': true}">
+      <div class="card">
+	  <img [src]="allWorksListsImage + work.imageintro" class="card-img-top" alt="{{work.title}}" style="height:100px">
+	  <div class="card-body home-only">
+		<h4 class="card-title">{{work.title}}</h4>
+		<p><small>{{work.pagetitle}}</small></p>
+        <p class="card-text text-muted">{{work.description}}</p>
+		<p class="card-text">{{work.details}}</p>
+	  </div>
+	  </div>
+	  </div>
+	  <div *ngIf="!work.latest">
+		<div>
+			<div class="card">
+			<img [src]="allWorksListsImage + work.imageintro" class="card-img-top" alt="{{work.title}}" style="height:100px">
+				<div class="card-body home-only">
+				<h4 class="card-title">{{work.title}}</h4>
+				<p><small>{{work.pagetitle}}</small></p>
+				<p class="card-text text-muted">{{work.description}}</p>
+				<p class="card-text">{{work.details}}</p>
+				</div>
+			</div>
+		</div>
+	</div>	  
+    </div>
+  </div>
+</div>
+
+		

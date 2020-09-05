@@ -1,0 +1,52 @@
+<div class="container mt-4 mb-4">
+    <div class="page-title"><i class="fa fa-wpexplorer" aria-hidden="true"></i> Research</div>     
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+           <p><span class="badge badge-info">Astrology</span></p>
+
+           <div class="jumbotron">
+            <div class="loader" *ngIf="loader">LOADING</div>
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <h1 class="display-4">Hello, Astrology!</h1>
+                    <p class="lead">This prediction help you in daily life based on moon sign. So, please choose your sign and see the todays prediction.</p>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="./../../../assets/images/logo.svg" alt="w3earth" />
+                    <div class="form-group">
+                        <label for="selectRashi">Choose Your Moon sign</label>
+                        <select id="selectRashi" class="form-control" #selectRashi (change)="changeSelect()">
+                            <option selected>Choose Rashi</option>
+                            <option value="{{z}}" *ngFor="let z of zodac">{{z}}</option>
+                        </select>
+                    </div>
+                    <div class="button-group">
+                        <button class="btn btn-dark" style="filter: grayscale(0.8);" [routerLink]="['./../home']" [disabled]="homeReturn" role="button">Back to home</button>
+                    </div>
+                </div>                
+            </div>
+            
+            <hr class="my-4">
+            <div class="lead" *ngIf="dataDetails">
+                <h3>Result:</h3>
+                <ol style="font-size:1.1rem">
+                    <li>Current Date: <strong>{{dataDetails.current_date}}</strong></li>
+                    <li>Compatibility: <strong>{{dataDetails.compatibility}}</strong></li>
+                    <li>Lucky Number: <strong>{{dataDetails.lucky_number}}</strong></li>
+                    <li>Lucky Time: <strong>{{dataDetails.lucky_time}}</strong></li>
+                    <li>Color: <strong>{{dataDetails.color}}</strong></li>
+                    <li>Date Range: <strong>{{dataDetails.date_range}}</strong></li>
+                    <li>Mood: <strong>{{dataDetails.mood}}</strong></li>
+                    <li>Description: <strong>{{dataDetails.description}}</strong></li>
+                </ol>              
+            </div>
+          </div>
+          
+          
+           
+           
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,26 @@
+
+$w3e-size: 20px;
+@mixin ico($w3e-size) {
+    width: 2*$w3e-size;
+    height: 2*$w3e-size;
+    display: block;
+    vertical-align: middle;
+}
+
+
+.w3e-alert {
+    @include ico(20px);
+    background: url('../images/svg/alert.svg') no-repeat;
+}
+.w3e-resume {
+    @include ico(20px);
+    background: url('../images/svg/resume.svg') no-repeat;
+}
+.w3e-skill {
+    @include ico(20px);
+    background: url('../images/svg/skills.svg') no-repeat;
+}
+.w3e-link {
+    @include ico(20px);
+    background: url('../images/svg/link.svg') no-repeat;
+}

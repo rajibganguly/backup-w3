@@ -1,0 +1,43 @@
+<div class="" *ngIf="firstTimeLanding">
+  <div class="header">
+    <div id="big-device" class="d-flex">
+      <div class="platform-all">
+        <div class="platform-left">
+          <h1 class="display-1 logo text-center"><a href="#"><img src="./../assets/images/logo.svg" alt="{{logo}}" /></a>  </h1> 
+          
+        </div>
+        <div class="p-2 right_box">
+          <app-game ></app-game>
+          <h1 class="display-4 showlogo-xs"><img src="./../assets/images/logo.svg" alt="{{logo}}" style="width:100%" /></h1>
+          <div class="jamboobox d-flex">
+            <button class="btn btn-xl" (click)="enterApp()" style="z-index:5"><strong style="color: red;background: rgba(0,0,0,0.7);padding: 5px;">
+              ENTER INSIDE
+              </strong> </button>
+            
+            
+          </div>      
+          
+        </div>
+      </div>      
+    </div>
+      <div class="my-footer-wrap">
+          <div class="my-footer d-flex justify-content-between">
+                <span class="footer-copy">&copy; 2020-2022</span> 
+                <span>
+                      <a href="https://twitter.com/DesignerRajibda">twitter</a> |
+                      <a href="https://www.linkedin.com/in/rajib-ganguly-0a3031a/?locale=es_ES">linkdin@RG</a> |
+                      <a href="https://www.linkedin.com/company/14435266/admin/" target="_blank">linkdin@w3</a> |
+                      <a href="https://w3earth.wordpress.com/">w3earth</a>
+                </span>
+                  
+          </div>
+      </div>
+  </div>
+</div>
+
+<ng-template [ngIf]="!firstTimeLanding">
+    <app-header></app-header>
+    <router-outlet></router-outlet>   
+    
+    <app-footer></app-footer>
+</ng-template>

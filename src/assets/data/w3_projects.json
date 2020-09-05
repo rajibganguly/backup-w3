@@ -1,0 +1,365 @@
+{
+   "projects":[
+      {
+         "pageId":211,
+         "mncproj":false,
+         "imageintro":"logo/projects003.jpg",
+         "title":"Logo concept and creation",
+         "description":[
+            {
+               "title":"What is Logo: ",
+               "detail":"Logo is the signature of business showing to world for recongnize."
+            }
+         ],
+         "accordian_style":true,
+         "accordian":[
+            {
+               "title":"Logo Company",
+               "imagepath":"logo/logopr01.jpg",
+               "alter":"logo comp"
+            }
+         ],
+         "previous":0,
+         "tag":[
+            "logo design"
+         ],
+         "tag_code":"logo_design",
+         "next":2,
+         "summery":null
+      },
+      {
+         "pageId":212,
+         "mncproj":false,
+         "imageintro":"wdesign/projects005.jpg",
+         "title":"web template",
+         "description":[
+            {
+               "title":"What is Website: ",
+               "detail":"Digital display of my business it is important to create a identity as website."
+            },
+            {
+               "title":"What is Specials: ",
+               "detail":"All designs are strictly copyrighted to their clients and Our most concern is understand the the client`s audience. Template, layout, icons, even logo is created by us."
+            }
+         ],
+         "accordian_style":true,
+         "accordian":[
+            {
+               "title":"4Wheel NGO",
+               "imagepath":"wdesign/4wheel.jpg",
+               "alter":"NGO"
+            },
+            {
+               "title":"Balco",
+               "imagepath":"wdesign/BalcoDashboard.jpg",
+               "alter":"Govt Interprises"
+            },
+            {
+               "title":"RICCO-Diamond",
+               "imagepath":"wdesign/riccomondo2x.jpg",
+               "alter":"RICCOMONDO"
+            },
+            {
+               "title":"Fund Net",
+               "imagepath":"wdesign/repsuit.jpg",
+               "alter":"Repsuit"
+            },
+            {
+               "title":"templates",
+               "imagepath":"wdesign/dsc028541.jpg",
+               "alter":"templates"
+            }
+         ],
+         "previous":1,
+         "tag":[
+            "web design",
+            "W3earth"
+         ],
+         "tag_code":"web_design",
+         "next":3,
+         "summery":null
+      },
+      {
+         "pageId":214,
+         "mncproj":true,
+         "imageintro":"barclays/projects_rg09.jpg",
+         "title":"Barclays PLC",
+         "description":[
+            {
+               "title":"Barclays: ",
+               "detail":"Working as Team Leader, Finding designing solution, working with developer, front end coding and flow creations for rest sections.HTML5/CSS/Angular JS/Angular 2+, BitBucket, Jenkins, Colour Contrast Analyser 2.5.0, NVDA screen reader, Scrum."
+            },
+            {
+               "title":"ui coding, UI development and Support: ",
+               "detail":"2018-12-15 to 2016-6-7"
+            }
+         ],
+         "accordian_style":true,
+         "accordian":[
+            {
+               "title":"open banking page master",
+               "imagepath":"barclays/barclays_image1.jpg",
+               "alter":"barclays"
+            },
+            {
+               "title":"open banking page child",
+               "imagepath":"barclays/barclays_image2.jpg",
+               "alter":"barclays"
+            }
+         ],
+         "previous":2,
+         "tag":[
+            "Barclays PLC",
+            "banking and financial services"
+         ],
+         "tag_code":"pub_design",
+         "next":4,
+         "summery":null
+      },
+      {
+         "pageId":214,
+         "mncproj":true,
+         "imageintro":"hsbc/projects_hsbc.jpg",
+         "title":"HSBC",
+         "description":[
+            {
+               "title":"Details- Click 2 Chat: ",
+               "detail":"Set Requirement, details requirement gather for third party technical implementation, Demo and partial implementation of chat tools, understand inner application complexity and final bug fixing."
+            },
+            {
+               "title":"authentication.liveperson.net/login.html - Jan 2016 - May 2016: ",
+               "detail":"Technical Analysis, Design understanding from liveperson team, Front-end Development, Unit testing, Bug fixing"
+            },
+            {
+               "title":"Process: ",
+               "detail":"login to liveperson and understand how their application works. Research and understanding design with liveperson team, updating their demo application. setup meeting with entity team to understand the pro cons. creating a separate branch for development. Development and testing and push to final branch."
+            }
+         ],
+         "accordian_style":true,
+         "accordian":[
+            {
+               "title":"HSBC livechat open",
+               "imagepath":"hsbc/live-chat-op2.jpg",
+               "alter":"livechat"
+            }
+         ],
+         "previous":2,
+         "tag":[
+            "hsbc",
+            "banking and financial services"
+         ],
+         "tag_code":"pub_design",
+         "next":4,
+         "summery":null
+      },
+      {
+         "pageId":215,
+         "mncproj":true,
+         "imageintro":"deeproots/eroots.jpg",
+         "title":"Firmenich",
+         "description":[
+            {
+               "title":"Details- eRoots: ",
+               "detail":"Build 40 responsible sourcing projects with smallholder farmers. Creating snapshot, focus on farmer overall growth."
+            },
+            {
+               "title":"eroots.firmenich.com - Oct 2019 - June 2019: ",
+               "detail":"Design Research, Story board, Screen design, Front-end Development, Bug fixing"
+            },
+            {
+               "title":"Geneva, Switzerland based Firmenich: ",
+               "detail":"Swiss and family-owned for over 120 years, Firmenich creates fragrances and flavors for the world’s most desirable brands, delighting billions of consumers every day since 1895."
+            }
+         ],
+         "accordian_style": true,
+         "accordian":[
+            {
+               "title":"eRoots forgot user Id",
+               "imagepath":"deeproots/snipaste1.png",
+               "alter":"forgotUserId"
+            },
+            {
+               "title":"eRoots login",
+               "imagepath":"deeproots/forgot_login_screen.png",
+               "alter":"login"
+            },
+            {
+               "title":"eRoots Project Management",
+               "imagepath":"deeproots/project_management_screen.png",
+               "alter":"project Management"
+            },
+            {
+               "title":"eRoots Project home",
+               "imagepath":"deeproots/project_home_screen.png",
+               "alter":"project Home"
+            },
+            {
+               "title":"eRoots Admin",
+               "imagepath":"deeproots/eroots_admin_screen.png",
+               "alter":"eRootAdmin"
+            },
+            {
+               "title":"eRoots System Admin",
+               "imagepath":"deeproots/eroots_system_admin.png",
+               "alter":"system Admin"
+            },
+            {
+               "title":"eRoots Survey Management",
+               "imagepath":"deeproots/survey_management_screen.png",
+               "alter":"survey Management"
+            },
+            {
+               "title":"eRoots Farmer profiling",
+               "imagepath":"deeproots/farmer_profiling_screen.png",
+               "alter":"farmer profiling"
+            },
+            {
+               "title":"eRoots Project Reporting",
+               "imagepath":"deeproots/project_reporting_screen.png",
+               "alter":"project Reporting"
+            }
+         ],
+         "previous":3,
+         "tag":[
+            "Firenich",
+            "Aroma & Perfume"
+         ],
+         "tag_code":"pub_design",
+         "next":5,
+         "summery":null
+      },
+      {
+         "pageId":216,
+         "mncproj":false,
+         "imageintro":"easyspeak/easyspeak_logo.png",
+         "title":"EasySpeak from w3earth",
+         "description":[
+            {
+               "title":"Mobile Application: ",
+               "detail":"Application is ready and available just for education purpose"
+            },
+            {
+               "title":"Android download: ",
+               "detail":"http://www.mediafire.com/file/a75vuwr18x7pm7q/easy-speak.apk/file"
+            }
+         ],
+         "accordian_style": true,
+         "accordian":[
+            {
+               "title":"Lists of objects",
+               "imagepath":"easyspeak/easyspeak_animal.png",
+               "alter":"list of object"
+            },
+            {
+               "title":"Dashboard",
+               "imagepath":"easyspeak/easyspeak_dashboard.png",
+               "alter":"dashboard"
+            },
+            {
+               "title":"Slides of intro",
+               "imagepath":"easyspeak/easyspeak_slidepage.png",
+               "alter":"intro slides"
+            }
+         ],
+         "previous":4,
+         "tag":[
+            "EasySpeak",
+            "w3earth",
+            "rajibganguly"
+         ],
+         "tag_code":"pub_design",
+         "next":6,
+         "summery":null
+      },
+      {
+         "pageId":217,
+         "mncproj":false,
+         "imageintro":"advantexe/advantexe-logo.jpg",
+         "title":"Advantexe & Gama",
+         "description":[
+            {
+               "title":"Advantexe - UX Design, UI coding, UI development: ",
+               "detail":"The Advantexe team possesses over 25 years of experience in both talent and business simulation development. The Advantexe team has extensive business and training background adding significant insights to the overall development of your company’s solution."
+            },
+            {
+               "title":"Software: Photoshop, HTML5, CSS3, jQuery: ",
+               "detail":"B2C application involved with dashboard, learning and complete ratio details. Different types of users also tracking end customers clients details, percentage of learning, pending items and summery."
+            }
+         ],
+         "accordian_style": true,
+         "accordian":[
+            {
+               "title":"Admin dashboard",
+               "imagepath":"advantexe/advantex_admindashboard2.jpg",
+               "alter":"Admin dashboard"
+            },
+            {
+               "title":"User Dashboard",
+               "imagepath":"advantexe/advantex_userdashboard2.jpg",
+               "alter":"dashboard"
+            },
+            {
+               "title":"login page",
+               "imagepath":"advantexe/advantex0.jpg",
+               "alter":"login page"
+            },
+            {
+               "title":"Gama dashboard",
+               "imagepath":"advantexe/gamadashboard.png",
+               "alter":"Gama dashboard"
+            },
+            {
+               "title":"Gama play video",
+               "imagepath":"advantexe/gamaplay.png",
+               "alter":"Gama play video"
+            }
+         ],
+         "previous":5,
+         "tag":[
+            "Aptara",
+            "w3earth"
+         ],
+         "tag_code":"pub_design",
+         "next":7,
+         "summery":null
+      },
+      {
+         "pageId":218,
+         "mncproj":false,
+         "imageintro":"topping/rg.jpg",
+         "title":"Graphic Design",
+         "description":[
+            {
+               "title":"Graphic design: ",
+               "detail":"Started design earlier on 2000 and worked on print media for various kinds of works."
+            }
+         ],
+         "accordian_style": true,
+         "accordian":[
+            {
+               "title":"Illustration",
+               "imagepath":"topping/leo1x.jpg",
+               "alter":"Admin dashboard"
+            },
+            {
+               "title":"T-shirt design",
+               "imagepath":"topping/mtshirt.jpg",
+               "alter":"dashboard"
+            },
+            {
+               "title":"Business Card",
+               "imagepath":"topping/projects001-demo.jpg",
+               "alter":"login page"
+            }
+         ],
+         "previous":6,
+         "tag":[
+            "W3earth",
+            "RJG"
+         ],
+         "tag_code":"pub_design",
+         "next":8,
+         "summery":null
+      }
+   ]
+}

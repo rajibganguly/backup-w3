@@ -1,0 +1,57 @@
+<div class="container mt-4 mb-4">
+    <div class="page-title"><i class="fa fa-bar-chart"></i> Resume</div>     
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <h2 class="text-uppercase pt-4 pb-4 text-primary"><i class="fa fa-bar-chart"></i> {{pagetitle}}</h2>
+            <p>{{description}}</p>
+            <p>Download my resume as <a href="{{resumepath}}Resume.pdf">PDF</a> and <a
+                    href="{{resumepath}}resume.docx">DOCX</a> here.</p>
+            <hr />
+            <h3>Skills details:</h3>
+            <button class="btn btn-warning" (click)="priorityByLabel()">{{BUTTON1}}</button>
+            <div class="card p-2 mt-4 mb-4 card-wrapper">
+                <div class="blackinstuction">Please scroll to see all skills. You may click on above button to check
+                    relevant skills in order.</div>
+
+                <table class="table table-hover mt-4 mb-4">
+                    <thead>
+                        <tr>
+                            <th class="text-capitalize">{{tableHead.theadfive}}</th>
+                            <th class="text-capitalize">{{tableHead.theadone}} Approx.</th>
+                            <th class="text-capitalize">{{tableHead.theadtwo}}</th>
+                            <th class="text-capitalize">{{tableHead.theadthree}}</th>
+                            <th class="text-capitalize">{{tableHead.theadfour}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let each of allSkillsDisplay">
+                            <td>{{each.skill}}</td>
+                            <td>{{each.technicalparam}}</td>
+                            <td>{{each.experience}}</td>
+                            <td>{{each.excellence}}</td>
+                            <td>{{each.projects}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+<div class="carousel-custom">
+    <h3 class="p-2">Experience:</h3>
+    <ngb-carousel *ngIf="mapimages">
+        <ng-template ngbSlide *ngFor="let img of mapimages">
+            <div class="picsum-img-wrapper text-center">
+                <img [src]="allWorksListsImage + img.imagepath" alt="{{img.alter}}">
+            </div>
+            <div class="carousel-caption">
+                <h3>{{img.company}}</h3>
+                <p>{{img.duration}}</p>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>

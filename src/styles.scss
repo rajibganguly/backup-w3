@@ -1,0 +1,410 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/bootstrap-scss/bootstrap-grid.scss';
+@import '../node_modules/bootstrap-scss/bootstrap.scss';
+
+
+
+$regSize: 20px;
+$redColor: 'red';
+$whiteColor: #fff;
+$blackColor: #000;
+
+$random: random(12) + 16;
+
+@mixin classforicon($regSize) {
+    width: $regSize;
+    height: $regSize;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: $regSize;
+}
+
+
+body {
+    .loader {
+        padding: 50% 0;
+        position: fixed;
+        background: #fff;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        text-align: center;
+        font-size: 3rem;
+        &.hide {
+            display:none;
+        }
+        
+    }
+    .page-title {
+        font-size: 0.5rem;
+        font-weight: 500;
+        padding-top: $regSize;
+        padding-bottom: $regSize;
+        color: rgb(102,100,101);
+        text-transform: uppercase;
+    }
+    .page-sub-title {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: 100;
+        color: rgb(235,124,0);
+        &.pd {
+            padding: $regSize;
+        }
+    }
+
+    .navbar-nav {
+        a {
+            color: lighten($blackColor, 0.5);
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    
+    .my_work {
+        background-image: url('./assets/images/svg/work.svg');
+        background-clip: 25% 50%;
+        @include classforicon(20px);
+    }
+    .my_links {
+        background-image: url('./assets/images/svg/skills.svg');
+        background-clip: 25% 50%;
+        @include classforicon(20px);
+    }
+    .my_resume {
+        background-image: url('./assets/images/svg/resume.svg');
+        background-clip: 25% 50%;
+        @include classforicon(20px);
+    }
+	.aliesbx {
+		
+		p & h4 {
+		padding: 0;
+		margin:0;
+		}
+		.latest {
+		position: relative;
+		&::before {
+			position: absolute;
+            left: 0px;
+            top: 0;
+            content: "LATEST";
+            background: $blackColor;
+            color: $whiteColor;
+            z-index: 1;
+            font-size: 0.4rem;
+            padding: 2px 30px;
+            box-shadow: 0 0 3px #666;
+		}
+		}
+    }
+    .carousel-caption {
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        left: 0;
+        background: rgba(0,0,0,0.5);
+    }
+    .card-wrapper {
+        height: 500px;
+        overflow: scroll;
+        .blackinstuction {
+            position: absolute;
+            left: 0;
+            top: 20px;
+            z-index: 2;
+            background: rgba(0,0,0,0.8);
+            padding: $regSize;
+            width: 100%;
+            color: $whiteColor;
+            display: none;
+        }
+        &:hover {
+            .blackinstuction {
+                display: block;
+            }
+        }
+    }
+    .carousel-custom {
+        margin-bottom:100px;
+        width:100%;
+        background:#eee;
+        padding: 2*$regSize;
+    }
+	.card {
+        margin-top: 1rem;
+		.card-body {
+            &.home-only {
+                height: 343px;
+                overflow: hidden;
+                &:hover {
+                    overflow: scroll;
+                }                
+            }		
+        .box {
+            border: 1px solid #eee;
+            padding: $regSize;
+            .box-title {
+                font-weight: 200;
+            }
+            .box-text {
+                color: lighten($blackColor, 50%)
+            }
+        }
+		}
+		box-shadow: 0 0 1px #ccc;
+		&:hover {
+		box-shadow: 0 0 6px #ccc;
+		}
+    }
+    .my-footer-wrap {
+        width: 100%;
+        padding: 10px;
+        .my-footer {
+            width:100%;
+            background:#fff;
+            .wid-50 {
+                width:50%
+            }
+        }
+    }
+    #big-device {
+        height: 90vh; 
+        
+
+        .jamboobox {
+            width: 100%;
+            height: 100vh;
+            
+
+            ul {
+                padding-left: 0;
+                margin-left: 0;
+                list-style: none;
+                width: 100%;
+                display: block;
+                li {
+                    list-style: none;
+                    padding-left: 0;
+                    margin-left: 0;
+                    a {
+                        padding: 5px;
+                    }
+                }
+            }            
+        }
+        .logo {            
+            padding-top: 5vh;
+            a {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: none !important;  
+                }
+            }
+        }
+        .right_box {
+            background-color:#98C2E8;
+            background-image: url('./assets/images/art.png');
+            /*background-position: -112px -25px;*/ 
+            background-repeat: no-repeat;
+            // animation: bg-anim 55s alternate infinite;
+            // -webkit-animation: bg-anim 55s alternate infinite;
+            height:100vh;
+            text-align: center;
+            @keyframes bg-anim {
+                0% {background-position: 0px 0px}                
+                25% {background-position: -51px -12px}
+                50% {background-position: -112px -25px}
+                75% {background-position: -45px -10px}
+                100% {background-position: 0px 0px}  
+            }
+            @keyframes bg-dot {
+                0% {opacity: 0.3; background-position: 0px 0px} 
+                50% {opacity: 0; background-position: $random + px $random + px}
+                100% {opacity: 0.3; background-position: 0px 0px}  
+            }
+            &:hover {
+                animation: bg-anim 75s infinite;
+                -webkit-animation: bg-anim 75s alternate infinite;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top:0;
+                z-index:2;
+                background-image: url('./assets/images/art2.png');
+                width: 100%;
+                height: 100vh;
+                animation: bg-dot 25s alternate infinite;
+                -webkit-animation: bg-dot 25s alternate infinite;
+            }
+        }               
+        
+    #big-device {        
+
+        .jamboobox {
+            width: 100%;
+            height: 86vh;
+            
+            
+            ul {
+                list-style: none;
+                padding-left: 0;
+                margin-left: 0;
+                width: 100%;
+                display: block;
+                li {
+                    list-style: none;
+                    padding: 7px;
+                    margin-left: 0;
+                    float:left;
+                }
+            }
+            #gameContainer {
+                width: 100%;
+                
+            }
+        }
+        .logo {
+            padding-top: 40vh;
+            a {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: none !important;   
+                }
+            }
+        }
+        .right_box {
+            height:100vh;
+        }
+    }
+
+    .navbar-nav {
+        li {
+            background: #eee;
+            padding: $regSize;
+            &:hover {
+                background: transparent;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    
+    .footer-copy {
+        /*
+        position:fixed;
+        left: $regSize;
+        bottom: $regSize;
+        */
+    }
+    .footer-links {
+        /*position:fixed;*/ 
+        right: $regSize;
+        bottom: $regSize;
+    }
+    .bluesec {
+        background: #ecf8ff;
+        img {
+            margin: 2px;
+        }
+    }
+    .bluesec-cert {
+        background: #ecf8ff;
+        img {
+            margin: 2px;
+            width:250px;
+        }
+    }
+    
+    
+}
+.footer-style {
+    background: #eee;
+    display: block;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    /*
+    bottom: 0;
+    left: 0;
+    */ 
+    
+}
+
+@media screen and (min-width:20px) and (max-width: 700px) {
+    #big-device {
+        
+
+        .platform-all {
+            width:100%;
+        }
+        .platform-left {
+            display:none
+        }
+        .showlogo-xs {
+            display:block;
+        }
+        
+    }
+    .picsum-img-wrapper img,
+    .widthsetimg {width:100%;}
+   
+}
+
+
+@media screen and (min-width:701px) and (max-width: 1100px) {
+    #big-device {        
+
+        .platform-all {
+            width:100%;
+        }
+        .platform-left {
+            width:20%;
+            position:fixed;
+        }
+        .right_box {
+            width: 70%;
+            float:right;
+        }
+        .showlogo-xs {
+            display:none;
+        }
+    }
+    .picsum-img-wrapper img,
+    .widthsetimg {width:100%}
+    
+}
+}
+@media screen and (min-width:1101px) and (max-width: 4000px) {
+    #big-device {        
+
+        .platform-all {
+            width:100%;
+        }
+        .platform-left {
+            width:20%;
+            float:left;
+        }
+        .right_box {
+            width: 70%;
+            float:right;
+        }
+        .showlogo-xs {
+            display:none;
+        }
+    }
+    .picsum-img-wrapper img,
+    .widthsetimg {width:auto}
+    
+}
+

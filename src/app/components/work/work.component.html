@@ -1,0 +1,81 @@
+<div class="loader" [ngClass]="loader?'show':'hide'">W3EARTH..</div>
+<div class="container mt-4 mb-4">
+    <div class="page-title"><i class="fa fa-newspaper-o"></i> {{allTitle.maintitle}}</div>
+    <h2 class="text-uppercase pt-4 pb-4 text-primary"><span class="fa fa-cube"></span> {{allTitle.subtitle[1]}}</h2>
+
+    <div class="row">
+        <div class="col-xl-12 col-xs-12 card" *ngFor="let pro of getAllWorksTopMnc$">
+
+            <div class="card-title pd text-uppercase"><strong>{{pro.title}}</strong></div>
+            <div class="card-body p-0 text-center">
+                <img [src]="projectdetailsimagepath + pro.imageintro" class="card-img-top p-4 widthsetimg" alt="{{pro.title}}">
+                <div class="box">
+                    <h4 class="box-title">{{pro.title}} 
+                        <span class="badge badge-success mr-1" *ngFor="let tg of pro.tag">{{tg}}</span>
+                    </h4>
+                    <p><small>{{pro.pagetitle}}</small></p>
+                    <ng-template [ngIf]="pro.description.length > 0">
+                        <p class="box-text" *ngFor="let detailed of pro.description">
+                            <strong>{{detailed.title}}</strong>
+                            <span>{{detailed.detail}}</span>
+                        </p>
+                    </ng-template>
+                    <!-- Carosel -->
+                    <ngb-carousel *ngIf="pro.accordian_style">
+                        <ng-template ngbSlide *ngFor="let acc of pro.accordian">
+                            <div class="picsum-img-wrapper text-center">
+                                <img [src]="projectdetailsimagepath + acc.imagepath" alt="{{acc.alter}}" class="widthsetimg">
+                            </div>
+                            <div class="carousel-caption">
+                                <h3>{{acc.title}}</h3>
+                                <p>{{acc.title}}</p>
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <h2 class="text-uppercase pt-4 pb-4 text-primary"><span class="fa fa-cubes"></span> {{allTitle.subtitle[0]}}</h2>
+
+        <div class="row">
+            <div class="col-xl-12 col-xs-12 card" *ngFor="let pro of getAllWorksRegMnc$">
+
+                <div class="card-title pd text-uppercase"><strong>{{pro.title}}</strong></div>
+                <div class="card-body p-0 text-center">
+                    <img [src]="projectdetailsimagepath + pro.imageintro" class="card-img-top p-4 widthsetimg" alt="{{pro.title}}">
+                    <div class="box">
+                        <h4 class="box-title">{{pro.title}}
+                            <span class="badge badge-success mr-1" *ngFor="let tg of pro.tag">{{tg}}</span>
+                        </h4>
+                        <p><small>{{pro.pagetitle}}</small></p>
+                        <ng-template [ngIf]="pro.description.length > 0">
+                            <p class="box-text" *ngFor="let detailed of pro.description">
+                                <strong>{{detailed.title}}</strong>
+                                <span>{{detailed.detail}}</span>
+                            </p>
+                        </ng-template>
+                        <!-- Carosel -->
+                        <ngb-carousel *ngIf="pro.accordian_style">
+                            <ng-template ngbSlide *ngFor="let acc of pro.accordian">
+                                <div class="picsum-img-wrapper text-center">
+                                    <img [src]="projectdetailsimagepath + acc.imagepath" alt="{{acc.alter}}" class="widthsetimg">
+                                </div>
+                                <div class="carousel-caption">
+                                    <h3>{{acc.title}}</h3>
+                                    <p>{{acc.title}}</p>
+                                </div>
+                            </ng-template>
+                        </ngb-carousel>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+
+
+</div>

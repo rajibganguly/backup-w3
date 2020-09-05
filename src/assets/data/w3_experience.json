@@ -1,0 +1,53 @@
+{
+    "experience": [
+        {
+            "id": 1,
+            "company": "QuessCorp, Pune",
+            "duration": "July 2020 - Present",
+            "alter": "Vodafone",
+            "imagepath": "map007.jpg"
+        },
+        {
+            "id": 2,
+            "company": "Firmenich, MUMBAI",
+            "duration": "October 2019 - July 2020",
+            "alter": "firmenich",
+            "imagepath": "map001.jpg"
+        },
+        {
+            "id": 3,
+            "company": "Zensar Technology, KHARADI, PUNE",
+            "duration": "July 2019 - October 2019",
+            "alter": "zensar",
+            "imagepath": "map002.jpg"
+        },
+        {
+            "id": 4,
+            "company": "Capgemini India, TALWADE, PUNE",
+            "duration": "September 2015 - July 2019",
+            "alter": "capgemini",
+            "imagepath": "map003.jpg"
+        },
+        {
+            "id": 5,
+            "company": "Rage Frameworks, KALYANI NAGAR, PUNE",
+            "duration": "February 2015 - Auguast 2015",
+            "alter": "Credit Pointe",
+            "imagepath": "map004.jpg"
+        },
+        {
+            "id": 6,
+            "company": "Aptara corporation, FURSUNGI, PUNE",
+            "duration": "July 2011 - January 2015",
+            "alter": "aptara",
+            "imagepath": "map005.jpg"
+        },
+        {
+            "id": 7,
+            "company": "Designclature, Kolkata",
+            "duration": "January 2011 - July 2011",
+            "alter": "designclature",
+            "imagepath": "map006.jpg"
+        }
+    ]
+}
