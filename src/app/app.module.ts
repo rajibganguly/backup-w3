@@ -24,6 +24,7 @@ import { SortingLatestPipe } from './sortinglatest.pipe';
 
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ResearchComponent } from './components/research/research.component';
+import { NasaSateComponent } from './components/nasa-sate/nasa-sate.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ResearchComponent } from './components/research/research.component';
     HeaderComponent,
     PrivacyPolicy,
     SortingLatestPipe,
-    ResearchComponent
+    ResearchComponent,
+    NasaSateComponent
   ],
   imports: [
     BrowserModule,

@@ -80,6 +80,11 @@ export class LinksComponent implements OnInit {
       id: 14,
       image: 'nav/projects_bcbs.jpg',
       alt: 'ApBlue Cross Blue Shield'
+    },
+    {
+      id: 15,
+      image: 'nav/projects_vodafone.jpg',
+      alt: 'Vodafone Germany'
     }
   ];
 

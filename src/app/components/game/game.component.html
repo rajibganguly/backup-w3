@@ -1,1 +1,16 @@
-<div id="gameContainer"></div>
+<div class="canvas-rge" #catchCanvas>
+    <span class="neptune"></span>
+    <span class="astronut"></span>
+    <span class="stone"></span>
+    <span class="star"></span>
+    <span class="enter" (click)="enterInside()">w3earth my home</span>
+</div>
+
+
+<div class="nasa-lines" *ngIf="nasaPrObj">
+    <h5 class="display-4">{{nasaPrObj?.title}}</h5>
+    <img [src]="nasaPrObj?.url" alt="nasaimg" class="nasathumbnail" />
+    <p>{{nasaPrObj?.explanation}}</p>
+    <hr/>
+    <p><small>&copy;{{nasaPrObj?.copyright}}</small> <small>{{nasaPrObj?.date}}</small></p>
+</div>

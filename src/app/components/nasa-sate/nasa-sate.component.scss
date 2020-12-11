@@ -1,0 +1,21 @@
+.sky {
+    width: 200px;
+    height: 100px;
+    background: #000;
+    z-index: 0;
+    position: relative;
+    .astroid {
+        /*
+        width: 1.0642325223em;
+        height: 1.1436282863em;
+        */
+        border-radius: 10px;
+        background-color: #ccc;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 6;
+        display: block;
+        box-shadow: 0 0 10px #ccc;
+    }
+}

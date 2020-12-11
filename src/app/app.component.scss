@@ -1,0 +1,20 @@
+.glem {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index:6;
+    
+}
+.social-med {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    font-size:2rem; 
+    padding-left:10px; 
+    z-index:5;
+    a {
+        display:block; 
+        color:#fff
+    }
+}

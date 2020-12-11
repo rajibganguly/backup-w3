@@ -1,6 +1,6 @@
-<nav class="navbar navbar-light bg-light rounded">
+<nav class="navbar navbar-dark bg-dark-cust">
   <a class="navbar-brand" href="#" [routerLink]="['/home']">
-    <img src="./../assets/images/logo.svg" alt="w3earth" style="width: 150px;">
+    <img src="./../assets/images/logo_dark.svg" alt="w3earth" style="width: 150px;">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="navbarsMenuShow()"
     aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,7 +8,7 @@
   </button>
 
   <div class="navbar-collapse" *ngIf="navbarsw3">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto mt-4">
       <li>
         <div class="d-flex justify-content-between">
           <div *ngFor="let link of properties">            

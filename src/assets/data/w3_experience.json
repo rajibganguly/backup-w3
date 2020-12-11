@@ -1,12 +1,5 @@
 {
-    "experience": [
-        {
-            "id": 1,
-            "company": "QuessCorp, Pune",
-            "duration": "July 2020 - Present",
-            "alter": "Vodafone",
-            "imagepath": "map007.jpg"
-        },
+    "experience": [        
         {
             "id": 2,
             "company": "Firmenich, MUMBAI",

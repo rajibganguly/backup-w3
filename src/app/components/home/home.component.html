@@ -1,4 +1,9 @@
 <div class="loader" [ngClass]="loader?'show':'hide'">W3EARTH..</div>
+<div class="container-fluid">
+	<figure>
+		<img src="./../../../assets/images/typing-849806_1920.jpg" alt="roots"/>
+	</figure>
+</div>
 <div class="container mt-4 mb-4">
 	<div class="page-title"><i class="fa fa-comments-o"></i> Comments</div>
   <div class="row">
@@ -29,6 +34,55 @@
 	</div>	  
     </div>
   </div>
+</div>
+<!-- All types of core areas-->
+<div class="container-fluid" style="margin:20em 0;">
+	<div class="row bg-dark" style="padding:10em 0;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-xs-12" *ngFor="let area of mainCoreAreas">
+					<div class="text-light">
+						<div class="p-4">
+							<i class="{{area.icon}}" style="font-size:5rem"></i>
+						</div>
+						<div class="card-body">
+						  <h5>{{area.title}}</h5>
+						  <p class="card-text">{{area.description}}</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container" style="margin:10em auto;">
+	<h1 class="display-4 text-center" style="padding-bottom:2em">Experience in Print & Digital Media</h1>
+	<p class="text-center">Working with various domain knowledge helps to create professional app flow, maintain a specific guidelines and give clear focus into business. Brand recognition to digital presentation, I have parallel experience of working.</p>
+	<p class="d-flex justify-content-between bg-light p-4" style="overflow-x: hidden">
+		<img src="./../../../assets/images/company/a1future.jpg" style="display:inline; height: 40px;" alt="Aptara"/>
+		<img src="./../../../assets/images/company/aptara.jpg" style="display:inline; height: 40px;" alt="Aptara"/>
+		<img src="./../../../assets/images/company/capgemini.jpg" style="display:inline; height: 60px;" alt="Capgemini"/>
+		<img src="./../../../assets/images/company/zensar.jpg" style="display:inline; height: 60px;" alt="Zensar"/>
+	</p>
+</div>
+<hr/>
+
+
+<div class="container" style="margin:5em 0;">
+	<div class="row" style="padding:5em 0;">
+		<div class="col-md-12 col-xs-12">
+			<h1 class="display-4 text-center">Some Interesting Explore</h1>			
+		<div class="row">
+			<div class="col-md-3 col-xs-12">
+				<a [routerLink]="['/research']" class="btn no-thik-border"><img src="../../../assets/images/nea_01.jpg" alt="nasa" /></a>
+			</div>
+			<div class="col-md-3 col-xs-12">
+				<a [routerLink]="['/research']" class="btn no-thik-border"><img src="../../../assets/images/adp_01.jpg" alt="astrology" /></a>
+			</div>
+		</div>
+	</div>
 </div>
 
 		

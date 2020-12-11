@@ -18,6 +18,9 @@ export class W3esearviceMainService {
   dbexperienceone = environment.dbexperienceone;
   dbprojectsone = environment.dbprojectsone;
 
+  //NASA API
+  apiKey = environment.nasaapikey;
+
   headers: HttpHeaders = new HttpHeaders();
   headersx = this.headers.append('Accept', 'application/json');
 
@@ -50,6 +53,22 @@ export class W3esearviceMainService {
     return this.http.get<Project[]>(this.dbprojectsone, {headers: this.headersx}).pipe(
       map(res => res['projects']), shareReplay()
       // map(res => this.subject.next(res['projects'])), shareReplay()
+    )
+  }
+
+
+
+  // NASA intro
+  getNasaPlanetaryApod() {
+    return this.http.get<any>(`https://api.nasa.gov/planetary/apod?api_key=${this.apiKey}`).pipe(
+      map(res => res), shareReplay()
+    )
+  }
+
+  // Near Earth Objects
+  getNasaNearEarthObject(startDate: string, endDate:string) {
+    return this.http.get<any>(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${startDate}&end_date=${endDate}&api_key=${this.apiKey}`).pipe(
+      map(res => res['near_earth_objects']), shareReplay()
     )
   }
 

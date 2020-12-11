@@ -1,5 +1,7 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+
+import { NasaSateComponent } from './../nasa-sate/nasa-sate.component';
 import { W3esearviceMainService } from 'src/app/services/w3esearvice-main.service';
 
 @Component({
@@ -9,7 +11,7 @@ import { W3esearviceMainService } from 'src/app/services/w3esearvice-main.servic
 })
 export class ResearchComponent implements OnInit {
   @ViewChild('selectRashi', {static: true}) selectRashi: ElementRef;
-  zodac: any[] = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius',  'Capricorn', 'Aquarius', 'Pisces'];
+  zodac: any[] = ['Mar 19 - Apr 20', 'Apr 19 - May 20', 'May 19 - Jun 20', 'Jun 19 - Jul 20', 'Jul 19 - Aug 20', 'Aug 19 - Sep 20', 'Sep 19 - Oct 20', 'Oct 19 - Nov 20', 'Nov 19 - Dec 20',  'Dec 19 - Jan 20', 'Jan 19 - Feb 20', 'Feb 19 - Mar 20'];
   dataDetails;
   homeReturn = true;
   loader = false;

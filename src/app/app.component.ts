@@ -18,12 +18,13 @@ export class AppComponent implements OnInit {
   logo = DATA.global.logo;
   logoPath = DATA.path.logopath;
   firstTimeLanding = true;
+  // nextTiGo = true;
 //   @ViewChild('canvas', { static: true }) 
 //   canvas: ElementRef<HTMLCanvasElement>;
 //   private ctx: CanvasRenderingContext2D;
   
 
-  // sprites = [];
+  
   
   
 
@@ -34,17 +35,14 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit() {
-    // this.ctx = this.canvas.nativeElement.getContext('2d');
-	// this.http.get('./../../assets/images/sprite1.json').subscribe((d) => {
-	// 	this.sprites.push(d);
-  // })
   const localvalue = localStorage.getItem("localVal");
     console.log(localvalue);
-    if(localvalue === "first_time") {
-      this.enterApp();
-    } else {
-      this.firstTimeLanding = true;
-    }
+    // if(localvalue === "first_time") {
+    //   this.enterApp();
+    // } else {
+    //   this.firstTimeLanding = true;
+      
+    // }
     
   }
 

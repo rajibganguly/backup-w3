@@ -4,19 +4,31 @@
         <div class="col-md-12 col-xs-12">
            <p><span class="badge badge-info">Astrology</span></p>
 
-           <div class="jumbotron">
+           <div class="jumbotron custom-bg-color2">
             <div class="loader" *ngIf="loader">LOADING</div>
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                    <h1 class="display-4">Hello, Astrology!</h1>
-                    <p class="lead">This prediction help you in daily life based on moon sign. So, please choose your sign and see the todays prediction.</p>
+                    <h1 class="display-4">Find Daily Prediction based on Sun Sign!</h1>
+                    <p class="lead">For Ex. If your date of birth is 1st Jan, then you are CAPRICORNIAN.</p>
+                    <span>ARIES <strong>Mars </strong></span>
+                    <span>TAURUS <strong>Venus </strong></span>
+                    <span>GEMINI <strong>Mercury </strong></span>
+                    <span>CANCER <strong>Moon </strong></span>
+                    <span>LEO <strong>Sun </strong></span>
+                    <span>VIRGO <strong>Mercury & Rahu </strong></span>
+                    <span>LIBRA <strong>Venus </strong></span>
+                    <span>SCORPIO <strong>Mars and Ketu </strong></span>
+                    <span>SAGITTARIUS <strong>Jupiter </strong></span>
+                    <span>CAPRICORN <strong>Saturn </strong></span>
+                    <span>AQUARIUS <strong>Saturn and Rahu </strong></span>
+                    <span>PISCES <strong>Jupiter </strong></span>
                 </div>
                 <div class="col-md-6 col-xs-12">
                     <img src="./../../../assets/images/logo.svg" alt="w3earth" />
                     <div class="form-group">
-                        <label for="selectRashi">Choose Your Moon sign</label>
+                        <label for="selectRashi">Date of Birth in Between</label>
                         <select id="selectRashi" class="form-control" #selectRashi (change)="changeSelect()">
-                            <option selected>Choose Rashi</option>
+                            <option selected>DOB found in...</option>
                             <option value="{{z}}" *ngFor="let z of zodac">{{z}}</option>
                         </select>
                     </div>
@@ -45,6 +57,10 @@
           
            
            
+        </div>
+
+        <div class="col-md-12 col-xs-12">
+            <app-nasa-sate></app-nasa-sate>
         </div>
     </div>
 </div>
