@@ -8,9 +8,20 @@
 
 
 <div class="nasa-lines" *ngIf="nasaPrObj">
-    <h5 class="display-4">{{nasaPrObj?.title}}</h5>
-    <img [src]="nasaPrObj?.url" alt="nasaimg" class="nasathumbnail" />
-    <p>{{nasaPrObj?.explanation}}</p>
+    <h5 class="display-4">W3E - <small class="nsline">USA EST {{nasaPrObj?.date}}</small></h5>
+    <!-- <img [src]="nasaPrObj?.url" alt="nasaimg" class="nasathumbnail" /> -->
+    <!-- <p>{{nasaPrObj?.explanation}}</p> -->
+    <h5 class="new-style-intro"><span>I`m studying user behaviour and understanding user motivations with the goal of designing better digital experiences.</span></h5>
+    <h5 class="new-style-intro">Last <span>13+ years</span> I`m focusing on user needs, design & developed many various websites, web applications, RIA and Progressive apps. Working in various technologies like Angular/ React from Front End, Node/ Express from backend and Sketch/ Adobe suite in designing.</h5>
+    <h5 class="new-style-intro">My role is important for both the customer experience as well as overall application UI architecture. Design-thinking process along with hands-on coding experience for the various domain like <span>Banking & Finance, Insurance, Elearning and Ecommerce </span>etc.</h5>
+    
+    <ul class="project-class">
+        <li *ngFor="let img of projects">
+            <div>
+                <img [src]="img.imgpath" alt="{{img.title}}" [routerLink]="['/work']" title="{{img.title}}" />
+            </div>
+        </li>
+    </ul>
     <hr/>
-    <p><small>&copy;{{nasaPrObj?.copyright}}</small> <small>{{nasaPrObj?.date}}</small></p>
+    <p> <small>w3earth <a href="https://www.google.com/search?client=avast&q=w3earth"> - google search</a></small></p>
 </div>
