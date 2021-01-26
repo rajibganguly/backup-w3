@@ -26,6 +26,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+			  "src/richpreview.jpg",
+			  "src/richpreview.png",
               "src/manifest.webmanifest"
             ],
             "styles": [
