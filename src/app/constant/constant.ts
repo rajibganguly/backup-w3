@@ -30,7 +30,7 @@ export const DATA = {
         }
     },
     buttons: {
-        button1: 'Show as 2020 expetise',
+        button1: 'Suffle Number of PROJECTS Wise',
         button2: 'Save',
         button3: 'Cancel',
         button4: 'Enter'

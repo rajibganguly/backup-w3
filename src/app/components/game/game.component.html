@@ -8,13 +8,37 @@
 
 
 <div class="nasa-lines" *ngIf="nasaPrObj">
-    <h5 class="display-4">W3E - <small class="nsline">USA EST {{nasaPrObj?.date}}</small></h5>
     <!-- <img [src]="nasaPrObj?.url" alt="nasaimg" class="nasathumbnail" /> -->
     <!-- <p>{{nasaPrObj?.explanation}}</p> -->
-    <h5 class="new-style-intro"><span>I`m studying user behaviour and understanding user motivations with the goal of designing better digital experiences.</span></h5>
-    <h5 class="new-style-intro">Last <span>13+ years</span> I`m focusing on user needs, design & developed many various websites, web applications, RIA and Progressive apps. Working in various technologies like Angular/ React from Front End, Node/ Express from backend and Sketch/ Adobe suite in designing.</h5>
-    <h5 class="new-style-intro">My role is important for both the customer experience as well as overall application UI architecture. Design-thinking process along with hands-on coding experience for the various domain like <span>Banking & Finance, Insurance, Elearning and Ecommerce </span>etc.</h5>
-    
+    <div class="p-4">
+        <h1 class="display-1">Hire for Front End</h1>
+        <span>
+            <ul>
+                <li>Proficient in GUI design and application development. </li>
+                <li>Developed E2E B2B/B2C Web applications/ Hybrid apps / Websites or any digital identity </li>
+                <li>Design, rapid prototype, and implement a scalable, reliable and maintainable node based web application</li>
+                <li>Enhance, refactor, and continuously improve the existing codebase & application</li>
+                <li>Various technologies like HTML5/CSS3, SASS/SCSS, SVG/Canvas, JavaScript/ES5/ES6/ES7, Hi-Chart, MVC, MVVP frameworks like AngularJs/Angular 6, Node JS, jQuery, RxJS, NgRx, Bootstrap/Material Design, Ionic Frameworks, Node JS, ReactJS </li>
+                <li>Proactive in keeping skills</li>
+            </ul>
+        </span>
+        <h3 class="mt-4">
+            <button class="btn btn-lg btn-warning" [routerLink]="['/resume']">Check it now!</button>
+        </h3>
+    </div>
+    <div class="p-4">
+        <h4 class="display-4">Assignment - <small class="nsline">How IT IS CONVENIENT FOR YOU </small></h4>
+        <p>
+            <button type="button" class="btn btn-lg btn-outline-primary m-1">Project wise</button>
+            <button type="button" class="btn btn-lg btn-outline-secondary m-1">Permanent Hiring</button>
+            <button type="button" class="btn btn-lg btn-outline-success m-1">Non-Profit Education</button>
+            <button type="button" class="btn btn-lg btn-outline-danger m-1">Hourly rate</button>
+            <button type="button" class="btn btn-lg btn-outline-warning m-1">Partner</button>
+        </p>
+    </div>
+    <div class="p-4">
+        <h4 class="display-4">Top client projects - <small class="nsline">USA EST {{nasaPrObj?.date}}</small></h4>
+     
     <ul class="project-class">
         <li *ngFor="let img of projects">
             <div>
@@ -22,6 +46,7 @@
             </div>
         </li>
     </ul>
+    </div>
     <hr/>
     <p> <small>w3earth <a href="https://www.google.com/search?client=avast&q=w3earth"> - google search</a></small></p>
 </div>

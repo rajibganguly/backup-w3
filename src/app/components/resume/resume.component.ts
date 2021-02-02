@@ -49,7 +49,9 @@ export class ResumeComponent implements OnInit {
 
   priorityByLabel() {
     if (this.allSkillsDisplay != undefined) {
-      this.allSkillsDisplay = this.allSkillsDisplay.sort((a, b) => a.label - b.label);
+      this.allSkillsDisplay = this.allSkillsDisplay.sort((a, b) => {
+        return a.projects - b.projects
+      });
     }
     
   }
