@@ -25,16 +25,16 @@ body {
     color: #fff;
     background-color: #000;
     .loader {
-        padding: 50% 0;
+        padding: 5vh 0;
         position: fixed;
-        background: #fff;
+        background: rgba(0,0,0,0.8) url(./assets/images/loader.gif) top center no-repeat;
         left: 0;
         top: 0;
         right: 0;
         bottom: 0;
         z-index: 99;
         text-align: center;
-        font-size: 3rem;
+        font-size: 1rem;
         &.hide {
             display:none;
         }

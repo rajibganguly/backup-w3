@@ -29,7 +29,7 @@
                         <label for="selectRashi">Date of Birth in Between</label>
                         <select id="selectRashi" class="form-control" #selectRashi (change)="changeSelect()">
                             <option selected>DOB found in...</option>
-                            <option value="{{z}}" *ngFor="let z of zodac">{{z}}</option>
+                            <option value="{{z.value}}" *ngFor="let z of zodac">{{z.name}}</option>
                         </select>
                     </div>
                     <div class="button-group">
