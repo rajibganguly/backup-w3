@@ -23,15 +23,7 @@ export class GameComponent implements OnInit {
     { day: '5', image: './../../../assets/images/typing-899806_1920.jpg'},
     { day: '6', image: './../../../assets/images/typing-909806_1920.jpg'}
   ];
-  projects = [
-    {imgpath: './../../../../assets/images/details/xs/xs1.jpg', title: 'Elearning Project'},
-    {imgpath: './../../../../assets/images/details/xs/xs2.jpg', title: 'Banking Finance Project'},
-    {imgpath: './../../../../assets/images/details/xs/xs3.jpg', title: 'Telecom Project'},
-    {imgpath: './../../../../assets/images/details/xs/xs4.jpg', title: 'Education Project'},
-    {imgpath: './../../../../assets/images/details/xs/xs5.jpg', title: 'Android Ionic Project'},
-    {imgpath: './../../../../assets/images/details/xs/xs6.jpg', title: 'Automation Mechanical Project'},
-    {imgpath: './../../../../assets/images/details/xs/xs7.jpg', title: 'Design Project'}
-  ]
+  
 
   @ViewChild('catchCanvas', {static: true}) catchCanvas: ElementRef;
 

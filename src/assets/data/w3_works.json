@@ -29,14 +29,27 @@
 		{
             "pageId": 113,
             "imageintro": "image03.jpg",
-            "title": "PLANZONE",
-            "description": "Free project management application",
+            "title": "The Science of Design",
+            "description": "Free UX knowledge",
             "importantcolor": "orange",
-            "latest": true,
-            "pagetitle": "PlanZone from w3earth",
-            "details": "The primary application Beta version will launch soon. Already received some client feedback. This application will help you to create your project details along with paid and due payments, tags with employee and employee's salary too. Database controlled by w3earth and all pro users can get backup features.",
+            "latest": false,
+            "pagetitle": "The human brain is lazy, biased, and prone to shortcuts.",
+            "details": "There’s a science as to why particular designs catch your eye and get your blood pumping. The human brain consumes a whopping 25% of the body’s oxygen despite making up only about 2% of its mass. The brain is lazy as a survival mechanism—pattern recognition and shortcuts mean less energy spent consciously processing the situation. The brain identifies things, labels them, and ignores them until they’re relevant again.",
             "previous": null,
             "next": 2,
+            "summery": null
+        },
+		{
+            "pageId": 114,
+            "imageintro": "image04.jpg",
+            "title": "The Magical Number 7",
+            "description": "What is Number 7 and UX from Raluca Budiu",
+            "importantcolor": "orange",
+            "latest": true,
+            "pagetitle": "The human brain is not optimized for the abstract thinking and data memorization that websites often demand. Many usability guidelines are dictated by cognitive limitations.",
+            "details": "People can remember about 7 (plus/minus 2) items in short-term memory. This memory limitation has implications for UX design, but not the ones you often hear stated.",
+            "previous": null,
+            "next": 3,
             "summery": null
         }
     ]

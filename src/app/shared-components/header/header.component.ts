@@ -14,9 +14,9 @@ export class HeaderComponent implements OnInit {
   navbarsw3: boolean = false;
   properties = [
     { name: 'PORTFOLIOS', path: '/work', title: 'What is my Works', class: 'fa fa-newspaper-o' },
-    { name: 'LINKS', path: '/links', title: 'All relevant Links of projects', class: 'fa fa-anchor' },
     { name: 'RESEARCH', path: '/research', title: 'All relevant Research of work', class: 'fa fa-wpexplorer' },
-    { name: 'RESUME', path: '/resume', title: 'My Resume to hire', class: 'fa fa-bar-chart' }
+    { name: 'RESUME', path: '/resume', title: 'My Resume to hire', class: 'fa fa-bar-chart' },
+    { name: 'LINKS', path: '/links', title: 'All relevant Links of projects', class: 'fa fa-anchor' }
   ];
 
   constructor(public router: Router) { }

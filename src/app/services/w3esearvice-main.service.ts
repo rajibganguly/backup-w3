@@ -17,6 +17,7 @@ export class W3esearviceMainService {
   dbskillsone = environment.dbskillsone;
   dbexperienceone = environment.dbexperienceone;
   dbprojectsone = environment.dbprojectsone;
+  dblinks = environment.dblinks;
 
   //NASA API
   apiKey = environment.nasaapikey;
@@ -41,6 +42,10 @@ export class W3esearviceMainService {
       this.subject.next([...this.works]);
     }      
     );
+  }
+
+  getAllLinks() {
+    return this.http.get(this.dblinks);
   }
 
   getAllSkills() {

@@ -8,6 +8,7 @@ export const environment = {
   dbskillsone: './../assets/data/w3_skills.json',
   dbexperienceone: './../assets/data/w3_experience.json',
   dbprojectsone: './../assets/data/w3_projects.json',
+  dblinks: './../assets/data/w3_links.json',
   localData: 'http://localhost:3000/',
   nasaapikey: 'LpJWgpoJQufGdK3Ng1rHM5FTx7xxjDVoszQoURc5'
 };

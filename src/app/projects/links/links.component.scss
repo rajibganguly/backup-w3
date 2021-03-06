@@ -1,0 +1,13 @@
+.round-corner-full-width {
+    width:100%;
+    border-radius: 10px;
+}
+.round-corner {
+    border-radius: 10px;
+}
+.filter {
+    filter:blur(2px);
+    &:hover {
+        filter:blur(0px)
+    }
+}

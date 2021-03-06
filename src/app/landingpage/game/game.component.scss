@@ -390,26 +390,11 @@
   100% {top: 15%; left: -1%; zoom: 0.3; opacity: 0;}
 }
 
-
-.project-class {
-  padding: 0;
-  margin: 20px 0;
-  list-style: none;
-  li {
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    div {
-      padding: 10px;
-      img {
-        border-radius: 10%;
-        cursor:pointer;
-        &:hover {
-          filter:invert(100%)
-        }
-      }
-    }
-  }
+.btn {
+  animation: backInRight;
 }
+
+
+
 
 

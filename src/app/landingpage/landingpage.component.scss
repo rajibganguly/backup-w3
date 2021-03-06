@@ -1,0 +1,65 @@
+.glem {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index:6;
+    
+}
+.social-med {
+    position: fixed;
+    top: 20%;
+    left: 13px;
+    font-size: 2rem;
+    padding-left: 10px;
+    z-index: 6;
+    a {
+        display:block; 
+        animation: pulse; 
+        animation-duration: 1s; 
+        color:#fff;
+        &:hover {
+          animation: pulse; 
+          animation-duration: 3s; 
+          color: #fff;
+          zoom: 2;
+        }
+    }
+}
+.bg-add {
+    background: url(./../../assets/images/w3earth-logo-bg.png) 0 -35px no-repeat;
+    height:100%;
+    
+}
+.starter-anim {
+    cursor:pointer;
+    &:hover {
+        color: #fff;
+    }
+}
+
+.lists-of-projects {
+    padding:0 10%; 
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(0,0,0,0.9));
+}
+
+.project-class {
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+    li {
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      div {
+        padding: 10px;
+        img {
+          border-radius: 10%;
+          cursor:pointer;
+          &:hover {
+            filter:invert(100%)
+          }
+        }
+      }
+    }
+  }

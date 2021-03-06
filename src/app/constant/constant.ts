@@ -26,7 +26,7 @@ export const DATA = {
         },
         link: {
             maintitle: 'Link',
-            subtitle: ['Really feel gratitude', 'Robot can succeed without a Certificate']
+            subtitle: ['Really grateful', 'Certification']
         }
     },
     buttons: {

@@ -1,18 +1,16 @@
 import { Component, ViewChild, ElementRef, OnInit, OnDestroy, OnChanges } from '@angular/core';
-import { DATA } from './constant/constant';
+import { DATA } from './../constant/constant';
 import { HttpClient } from '@angular/common/http';
-import { GameComponent } from './landingpage/game/game.component';
 import { Router } from '@angular/router';
 
-import { HeaderComponent } from './shared-components/header/header.component';
-import { FooterComponent } from './shared-components/footer/footer.component';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-landingpage',
+  templateUrl: './landingpage.component.html',
+  styleUrls: ['./landingpage.component.scss']
 })
-export class AppComponent implements OnInit {
+export class LandingpageComponent implements OnInit {
+
   siteUrl = DATA.global.siteurl;
   name = DATA.global.name;
   logo = DATA.global.logo;
@@ -76,10 +74,12 @@ projects = [
     this.router.navigate(['/work']);
   }
 
-  
-  
-  
-
 }
+
+
+
+
+
+
 
 
