@@ -163,11 +163,12 @@
 @media screen and (min-width: 1200px) {
   .canvas-rge {
     background-color: #111011;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-clip: content-box;
+    background-size: 100% 100%;
     animation-name: bg-movement 4s linear infinite;
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     display: block;
     position: relative;
     z-index: 0;

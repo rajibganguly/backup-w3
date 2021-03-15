@@ -1,0 +1,36 @@
+<div>
+    <p><span class="badge badge-info">Nutrition</span></p>
+
+    <div class="jumbotron custom-bg-color2">
+        <div class="loader" *ngIf="loader">LOADING</div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-4">Food with Nutrition Value!</h1>
+                <p class="text-info"> If you`re foodie then Select Atleast One Nutrition Value (min 10% and Max 100%) to check calories, Carbohydrates, Fat and Protein.</p>
+                <div class="m-1">
+                    <span class="px-2 float-card" [ngClass]="ingrd.active? 'active': 'no'" (click)="getValue(ingrd)"
+                        *ngFor="let ingrd of listsOfIngred">{{ingrd.name}}</span>
+                </div>
+                <button class="btn btn-info mt-2" (click)="generateNutriValue()">Show Now</button>
+            </div>
+            <div class="col-md-12">
+                <div *ngIf="obj" class="row">
+                    <ng-container *ngFor="let s of obj">
+                        <div class="col-lg-4 col-md-3 col-sm-3 col-xs-12 mt-3 mb-3">
+                            <div>
+                                <h4 class="mr-2 mb-2">{{s.title}}</h4>
+                                <img src="{{s.image}}" alt="s.title" style="border-radius:5px" />
+                                <p>
+                                    <span class="text-success">Calories: {{s.calories}}</span> * 
+                                    <span class="text-primary">Carbohydrates: {{s.carbs}}</span> * 
+                                    <span class="text-warning">Fat: {{s.fat}}</span> * 
+                                    <span class="text-info">Protein: {{s.protein}}</span>
+                                </p>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

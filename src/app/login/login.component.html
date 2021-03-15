@@ -1,0 +1,14 @@
+<div class="wrapper">
+    <div class="loginbox">
+        <div class="form-group">
+            <form (submit)="onEnterCode()">
+            <div class="title">HELLO, I am an Senior UX Developer with 16 years of experience. Login in if you
+                moreinterested to listen my thoughts and view. </div>
+            <p class="error" *ngIf="errormsg">You have no permission. Please contact admin - w3earth@outlook.com</p>
+            <label for="textfield">Enter Number</label>
+            <input type="text" id="textfield" class="form-control" />
+            <button class="btn btn-success btn-lg" type="submit">Enter</button>
+        </form>
+        </div>
+    </div>
+</div>

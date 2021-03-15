@@ -8,3 +8,14 @@
 .bg-dark-cust {
     background-color: rgba(255,255,255,0.05)!important;
 }
+
+.topheader {
+    .topheader-signin {
+        width: 55px;
+        display: inline-block;
+    }
+    .topheader-bx {
+        width: calc(100% - 60px);
+        display: inline-block;
+    }
+}

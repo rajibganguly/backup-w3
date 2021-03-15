@@ -22,6 +22,9 @@ export class W3esearviceMainService {
   //NASA API
   apiKey = environment.nasaapikey;
 
+  //Food API
+  foodapi = environment.foodapikey;
+
   headers: HttpHeaders = new HttpHeaders();
   headersx = this.headers.append('Accept', 'application/json');
 
@@ -84,5 +87,12 @@ export class W3esearviceMainService {
     return this.http.post(`https://aztro.sameerkumar.website?sign=${a}&day=today`, {})
   }
   
+
+  // Advice API
+  allRecepie(addParam) {
+    return this.http.get(`https://api.spoonacular.com/recipes/findByNutrients?apiKey=${this.foodapi}&${addParam}`, {headers: this.headersx})
+  }
+  
+
   
 }

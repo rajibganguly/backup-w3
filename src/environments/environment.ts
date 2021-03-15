@@ -10,7 +10,8 @@ export const environment = {
   dbprojectsone: './../assets/data/w3_projects.json',
   dblinks: './../assets/data/w3_links.json',
   localData: 'http://localhost:3000/',
-  nasaapikey: 'LpJWgpoJQufGdK3Ng1rHM5FTx7xxjDVoszQoURc5'
+  nasaapikey: 'LpJWgpoJQufGdK3Ng1rHM5FTx7xxjDVoszQoURc5',
+  foodapikey: 'c564e9261bc74c8a8802d57c6d1c4921'
 };
 
 /*
